@@ -1,0 +1,44 @@
+function setup() { 
+  createCanvas(400, 400);
+} 
+
+function draw() { 
+  background(220);
+  var firstColor=color('black');
+  var secondColor=color('white');
+  var thirdColor=color('gray');
+  fill(thirdColor);
+  rect(130,20,150,350,50,50);
+  //fill('white');
+  //arc(230,70,30,30,20,2.2,0);
+  //curve(200,70,30,20,2,5,0,20)
+  fill(firstColor);
+  ellipse(203,70,30,30);
+  //fill(secondColor);
+  //rect(196,56,13,15,5,5);
+  push();
+  	fill(thirdColor);
+  	rect(195,30,15,15,5);
+    fill(firstColor);
+  	ellipse(205,140,100,100);
+  	fill(thirdColor);
+  	ellipse(205,140,65,65);
+  pop();
+  
+  push();
+  fill(firstColor);
+  	ellipse(170,215,25,25);
+  	translate(35,0);
+  	ellipse(170,215,25,25);
+  	translate(35,0);
+  	ellipse(170,215,25,25);
+  	translate(0,40);
+  	ellipse(170,215,25,25);
+  	translate(-35,0);
+  	ellipse(170,215,25,25);
+    translate(-35,0);
+  	ellipse(170,215,25,25);
+  pop();
+  
+  
+}

@@ -1,0 +1,24 @@
+function setup() { 
+  createCanvas(400, 400);
+} 
+
+function draw() { 
+  background(220);
+	var firstColor=color(0,0,0);
+	var secondColor=color('yellow');
+	var thirdColor=color(255,255,255);
+	var forthColor=color('pink');
+	var fifthColor=color('gray');
+	ellipse(200,170,150,150);
+	fill(forthColor);
+	push();
+		fill(secondColor);
+		ellipse(165, 155, 20, 20);
+		fill(secondColor);
+		translate(65,0);
+		ellipse(165,155,20,20);
+		fill(fifthColor);
+		ellipse(135,200,50,20);
+	
+  pop();
+}
